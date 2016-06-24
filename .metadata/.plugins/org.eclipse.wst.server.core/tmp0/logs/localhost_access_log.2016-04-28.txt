@@ -1,0 +1,4 @@
+127.0.0.1 - - [28/Apr/2016:16:02:58 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [28/Apr/2016:16:02:59 +0800] "GET /ServletDemoByEclipe/index.jsp HTTP/1.1" 200 491
+0:0:0:0:0:0:0:1 - - [28/Apr/2016:16:03:01 +0800] "GET /ServletDemoByEclipe/servlet/HelloServlet HTTP/1.1" 200 47
+0:0:0:0:0:0:0:1 - - [28/Apr/2016:16:03:07 +0800] "POST /ServletDemoByEclipe/servlet/HelloServlet HTTP/1.1" 200 47

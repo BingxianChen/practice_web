@@ -1,0 +1,1096 @@
+!SESSION 2016-06-08 14:50:45.236 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+
+This is a continuation of log file /Users/chen/Documents/workspace_web/.metadata/.bak_0.log
+Created Time: 2016-06-08 14:50:58.763
+
+!ENTRY org.eclipse.ui 2 2 2016-06-08 14:50:58.763
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.usage, page: org.jboss.tools.usage.analytics.preferences.UsageAnalyticsPreferencePage)
+!SESSION 2016-06-08 21:05:47.759 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+
+!ENTRY org.jboss.tools.common 4 0 2016-06-08 21:05:49.916
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common [1313]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.core [1314]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.foundation.core [1325]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.core 4 0 2016-06-08 21:05:49.927
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.core [1314]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.foundation.core [1325]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.el.core 4 0 2016-06-08 21:05:49.948
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.el.core [1315]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.resref.core; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.resref.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.resref.core [1319]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model 4 0 2016-06-08 21:05:49.957
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model [1316]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model.ui 4 0 2016-06-08 21:05:49.962
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model.ui [1317]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.resref.core 4 0 2016-06-08 21:05:49.969
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.resref.core [1319]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.ext 4 0 2016-06-08 21:05:49.976
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.ext [1320]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.xml 4 0 2016-06-08 21:05:49.983
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.xml [1321]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.ui 4 0 2016-06-08 21:05:49.988
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.ui [1322]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.validation 4 0 2016-06-08 21:05:49.994
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.validation [1323]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-06-08 21:05:49.998
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.core [1325]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.ui 4 0 2016-06-08 21:05:50.002
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.ui [1326]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.foundation.core [1325]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml 4 0 2016-06-08 21:05:50.008
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml [1344]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml.ui 4 0 2016-06-08 21:05:50.013
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml.ui [1345]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 2 2 2016-06-08 21:06:01.195
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.usage, page: org.jboss.tools.usage.analytics.preferences.UsageAnalyticsPreferencePage)
+
+!ENTRY org.eclipse.core.jobs 4 2 2016-06-08 21:06:34.907
+!MESSAGE An internal error occurred during: "Setup check".
+!STACK 0
+org.eclipse.emf.common.util.BasicEList$BasicIndexOutOfBoundsException: index=0, size=0
+	at org.eclipse.emf.common.util.BasicEList.get(BasicEList.java:346)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.getInstallation(SetupContext.java:633)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:219)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:429)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$3(SetupUIPlugin.java:323)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:223)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-06-18 13:31:36.986 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/chen/Documents/workspace_web -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+
+!ENTRY org.jboss.tools.common 4 0 2016-06-18 13:31:41.725
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common [1313]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.core [1314]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.foundation.core [1325]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.core 4 0 2016-06-18 13:31:41.805
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.core [1314]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.foundation.core [1325]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.el.core 4 0 2016-06-18 13:31:41.840
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.el.core [1315]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.resref.core; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.resref.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.resref.core [1319]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model 4 0 2016-06-18 13:31:41.855
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model [1316]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model.ui 4 0 2016-06-18 13:31:41.866
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model.ui [1317]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.resref.core 4 0 2016-06-18 13:31:41.882
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.resref.core [1319]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.ext 4 0 2016-06-18 13:31:41.896
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.ext [1320]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.xml 4 0 2016-06-18 13:31:41.911
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.xml [1321]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.ui 4 0 2016-06-18 13:31:41.930
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.ui [1322]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.validation 4 0 2016-06-18 13:31:41.942
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.validation [1323]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-06-18 13:31:41.949
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.core [1325]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.ui 4 0 2016-06-18 13:31:41.957
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.ui [1326]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.foundation.core [1325]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml 4 0 2016-06-18 13:31:41.968
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml [1344]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml.ui 4 0 2016-06-18 13:31:41.975
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml.ui [1345]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 2 2 2016-06-18 13:31:59.644
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.usage, page: org.jboss.tools.usage.analytics.preferences.UsageAnalyticsPreferencePage)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2016-06-18 13:32:08.965
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out. ; version: 1.100.0.v20160303-1450
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:442)
+	at sun.security.ssl.InputRecord.readV3Record(InputRecord.java:554)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:509)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:934)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1332)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1359)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1343)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+!SESSION 2016-06-23 22:07:51.341 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/chen/.eclipse_keyring -showlocation
+
+!ENTRY org.jboss.tools.common 4 0 2016-06-23 22:07:53.695
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common [1313]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.core [1314]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.foundation.core [1325]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.core 4 0 2016-06-23 22:07:53.707
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.core [1314]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.foundation.core [1325]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.el.core 4 0 2016-06-23 22:07:53.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.el.core [1315]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.resref.core; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.resref.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.resref.core [1319]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model 4 0 2016-06-23 22:07:53.739
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model [1316]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.model.ui 4 0 2016-06-23 22:07:53.748
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.model.ui [1317]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; visibility:="reexport"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.resref.core 4 0 2016-06-23 22:07:53.757
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.resref.core [1319]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.ext 4 0 2016-06-23 22:07:53.764
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.ext [1320]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.text.xml 4 0 2016-06-23 22:07:53.771
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.text.xml [1321]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.ui 4 0 2016-06-23 22:07:53.777
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.ui [1322]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.common.validation 4 0 2016-06-23 22:07:53.783
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.common.validation [1323]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.core 4 0 2016-06-23 22:07:53.789
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.core [1325]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.foundation.ui 4 0 2016-06-23 22:07:53.793
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.foundation.ui [1326]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.1.0"
+    -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.foundation.core [1325]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml 4 0 2016-06-23 22:07:53.799
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml [1344]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common [1313]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common.core [1314]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.foundation.core [1325]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.jboss.tools.hibernate.xml.ui 4 0 2016-06-23 22:07:53.805
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.jboss.tools.hibernate.xml.ui [1345]
+  Unresolved requirement: Require-Bundle: org.jboss.tools.common.model; bundle-version="3.7.0"
+    -> Bundle-SymbolicName: org.jboss.tools.common.model; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+       org.jboss.tools.common.model [1316]
+         Unresolved requirement: Require-Bundle: org.jboss.tools.common; visibility:="reexport"
+           -> Bundle-SymbolicName: org.jboss.tools.common; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+              org.jboss.tools.common [1313]
+                Unresolved requirement: Require-Bundle: org.jboss.tools.common.core; bundle-version="3.4.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.jboss.tools.common.core; bundle-version="3.7.1.Final-v20160408-2358-B112"; singleton:="true"
+                     org.jboss.tools.common.core [1314]
+                       Unresolved requirement: Require-Bundle: org.jboss.tools.foundation.core; bundle-version="1.0.0"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.jboss.tools.foundation.core; bundle-version="1.2.1.Final-v20160408-2358-B112"; singleton:="true"
+                            org.jboss.tools.foundation.core [1325]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.ui 2 2 2016-06-23 22:08:05.130
+!MESSAGE Invalid preference category path: org.jboss.tools.common.model.ui.MainPreferencePage (bundle: org.jboss.tools.usage, page: org.jboss.tools.usage.analytics.preferences.UsageAnalyticsPreferencePage)
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2016-06-23 22:08:15.555
+!MESSAGE Server ‘org.jboss.tools’ failed with exception: Connect to tools.jboss.org:443 [tools.jboss.org/209.132.182.95] failed: connect timed out. ; version: 1.100.0.v20160303-1450
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to tools.jboss.org:443 [tools.jboss.org/209.132.182.95] failed: connect timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:244)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more

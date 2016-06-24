@@ -1,0 +1,7 @@
+<classpath>
+  <container id="hello!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="/Users/chen/Documents/workspace_web/hello/WebContent/WEB-INF/lib/mybatis-3.2.7.jar">
+      <source-attachment-path>/Users/chen/Documents/java_jar/mybatis/mybatis-3-mybatis-3.2.7</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=MyFirstServletDemo/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpServlet.class[HttpServlet" modifiers="1057" timestamp="1454963309000"/>
+<typeInfo handle="=ImoocFilter/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1454963309000"/>
+<typeInfo handle="=ImoocFilter/\/Library\/Java\/JavaVirtualMachines\/jdk1.7.0_79.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.util.logging(Filter.class[Filter" modifiers="1537" timestamp="1428691662000"/>
+<typeInfo handle="=FirstListener/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionBindingListener.class[HttpSessionBindingListener" modifiers="1537" timestamp="1454963309000"/>
+<typeInfo handle="=FirstListener/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionActivationListener.class[HttpSessionActivationListener" modifiers="1537" timestamp="1454963309000"/>
+<typeInfo handle="=SessionManager/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionListener.class[HttpSessionListener" modifiers="1537" timestamp="1454963309000"/>
+<typeInfo handle="=SessionManager/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionContext.class[HttpSessionContext" modifiers="1050113" timestamp="1454963309000"/>
+<typeInfo handle="=SessionManager/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet(ServletRequestListener.class[ServletRequestListener" modifiers="1537" timestamp="1454963309000"/>
+<typeInfo handle="=SessionManager/\/Library\/Tomcat\/lib\/servlet-api.jar&lt;javax.servlet(ServletRequest.class[ServletRequest" modifiers="1537" timestamp="1454963309000"/>
+<typeInfo handle="=HelloStruts2/WebContent\/WEB-INF\/lib\/xwork-core-2.3.24.jar&lt;com.opensymphony.xwork2(ActionSupport.class[ActionSupport" modifiers="33" timestamp="1465281012000"/>
+</typeInfoHistroy>

@@ -1,0 +1,15 @@
+127.0.0.1 - - [13/Apr/2016:14:04:34 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:14:04:35 +0800] "GET /MyJavaWebApp/ HTTP/1.1" 200 278
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:14:05:27 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 279
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:14:59:03 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 326
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:14:59:18 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 326
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:14:59:55 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 326
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:15:00:05 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 326
+127.0.0.1 - - [13/Apr/2016:16:10:41 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:16:10:42 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 345
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:16:33:17 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:16:34:29 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 369
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:16:35:04 +0800] "GET /MyJavaWebApp/index.jsp HTTP/1.1" 200 394
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:17:43:11 +0800] "GET /MyJavaWebApp/exercise.jsp HTTP/1.1" 200 1149
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:17:43:51 +0800] "GET /MyJavaWebApp/exercise.jsp HTTP/1.1" 200 1659
+0:0:0:0:0:0:0:1 - - [13/Apr/2016:17:48:53 +0800] "GET /MyJavaWebApp/exercise.jsp HTTP/1.1" 200 3094
